@@ -88,7 +88,7 @@ const images = [
 
 render();
 
-let gallery = new SimpleLightbox('.gallery a', {
+let gallery = new SimpleLightbox('.gallery-list a', {
     captionsData: 'alt',
     captionDelay: 250,
 });
