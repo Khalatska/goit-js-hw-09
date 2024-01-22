@@ -16,8 +16,8 @@ saveToLs(localStorageKey, obj);
 function restoreData () {
  const data = loadFromLs(localStorageKey);
 
- form.elements.email.value = data.email || '';
- form.elements.message.value = data.message || '';
+ form.elements.email.value = data?.email || '';
+ form.elements.message.value = data?.message || '';
 } 
 
 restoreData();
