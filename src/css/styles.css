@@ -12,7 +12,7 @@ body {
 
 /*----------Task-1------------*/
 
-.gallery-list {
+.gallery {
     display: flex;
     flex-wrap: wrap;
     align-items: center;

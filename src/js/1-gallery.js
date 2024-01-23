@@ -67,7 +67,7 @@ const images = [
     },
   ];
 
-  const galleryList = document.querySelector('.gallery-list');
+  const galleryList = document.querySelector('.gallery');
 
   function imageElement ({preview, original, description}){
     return `<li class="gallery-item">
@@ -83,12 +83,12 @@ const images = [
 
   function render(){
     const markup = imagesElement(images);
-    galleryList.innerHTML = markup;
+    galleryList.insertAdjacentHTML('afterbegin', markup);
   }
 
 render();
 
-let gallery = new SimpleLightbox('.gallery-list a', {
+let lightbox= new SimpleLightbox('.gallery a', {
     captionsData: 'alt',
     captionDelay: 250,
 });
